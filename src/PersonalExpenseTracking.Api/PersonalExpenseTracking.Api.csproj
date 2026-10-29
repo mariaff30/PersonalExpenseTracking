@@ -16,7 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\PersonalExpenseTracking.Application\PersonalExpenseTracking.Application.csproj" />
     <ProjectReference Include="..\PersonalExpenseTracking.Infrastructure\PersonalExpenseTracking.Infrastructure.csproj" />
-    <ProjectReference Include="..\src\PersonalExpenseTracking.Application\PersonalExpenseTracking.Application.csproj" />
+    <ProjectReference Include="..\PersonalExpenseTracking.Application\PersonalExpenseTracking.Application.csproj" />
   </ItemGroup>
 
 </Project>
