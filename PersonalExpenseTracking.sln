@@ -1,17 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.12.12324.72 oobinsiders
+VisualStudioVersion = 18.12.12324.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTracking.Infrastructure", "src\PersonalExpenseTracking.Infrastructure\PersonalExpenseTracking.Infrastructure.csproj", "{DE75F157-A295-4246-AB1A-A46F3638E6BA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{50F82C37-65E5-4F31-AFB4-F51139C80E6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTracking.Application", "src\PersonalExpenseTracking.Application\PersonalExpenseTracking.Application.csproj", "{C5E750ED-7E00-41E1-8307-C0E05EF9D58B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTracking.Communication", "src\Shared\PersonalExpenseTracking.Communication\PersonalExpenseTracking.Communication.csproj", "{43584468-0683-4925-AD56-6718D1275121}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTracking.Domain", "src\PersonalExpenseTracking.Domain\PersonalExpenseTracking.Domain.csproj", "{8692C5B9-AE78-4F9F-898D-0E6C695A8E2E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{3311A19D-178E-4682-8301-FE53834F92D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTracking.Api", "src\PersonalExpenseTracking.Api\PersonalExpenseTracking.Api.csproj", "{44B772AF-D6F4-4B60-B8C9-06EAC68D4E1D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTracking.Api", "src\Backend\PersonalExpenseTracking.Api\PersonalExpenseTracking.Api.csproj", "{2FC6F416-4983-04A1-0337-203855C83542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTracking.Application", "src\Backend\PersonalExpenseTracking.Application\PersonalExpenseTracking.Application.csproj", "{A56D08B8-9E64-47FA-2FB6-E95069827A8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTracking.Domain", "src\Backend\PersonalExpenseTracking.Domain\PersonalExpenseTracking.Domain.csproj", "{5B5D07FF-1904-116C-22F9-563808510CEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTracking.Infrastructure", "src\Backend\PersonalExpenseTracking.Infrastructure\PersonalExpenseTracking.Infrastructure.csproj", "{FB2CF26D-553E-895B-BCEC-447A17F2CDDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalExpenseTracking.Exception", "src\Shared\PersonalExpenseTracking.Exception\PersonalExpenseTracking.Exception.csproj", "{9A90A8E8-F6F1-48D9-AAC6-05E74F67643B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,31 +27,43 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DE75F157-A295-4246-AB1A-A46F3638E6BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE75F157-A295-4246-AB1A-A46F3638E6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE75F157-A295-4246-AB1A-A46F3638E6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE75F157-A295-4246-AB1A-A46F3638E6BA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5E750ED-7E00-41E1-8307-C0E05EF9D58B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5E750ED-7E00-41E1-8307-C0E05EF9D58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5E750ED-7E00-41E1-8307-C0E05EF9D58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5E750ED-7E00-41E1-8307-C0E05EF9D58B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8692C5B9-AE78-4F9F-898D-0E6C695A8E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8692C5B9-AE78-4F9F-898D-0E6C695A8E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8692C5B9-AE78-4F9F-898D-0E6C695A8E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8692C5B9-AE78-4F9F-898D-0E6C695A8E2E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44B772AF-D6F4-4B60-B8C9-06EAC68D4E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44B772AF-D6F4-4B60-B8C9-06EAC68D4E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44B772AF-D6F4-4B60-B8C9-06EAC68D4E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44B772AF-D6F4-4B60-B8C9-06EAC68D4E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43584468-0683-4925-AD56-6718D1275121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43584468-0683-4925-AD56-6718D1275121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43584468-0683-4925-AD56-6718D1275121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43584468-0683-4925-AD56-6718D1275121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC6F416-4983-04A1-0337-203855C83542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC6F416-4983-04A1-0337-203855C83542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC6F416-4983-04A1-0337-203855C83542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC6F416-4983-04A1-0337-203855C83542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56D08B8-9E64-47FA-2FB6-E95069827A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56D08B8-9E64-47FA-2FB6-E95069827A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56D08B8-9E64-47FA-2FB6-E95069827A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56D08B8-9E64-47FA-2FB6-E95069827A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5D07FF-1904-116C-22F9-563808510CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5D07FF-1904-116C-22F9-563808510CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5D07FF-1904-116C-22F9-563808510CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5D07FF-1904-116C-22F9-563808510CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2CF26D-553E-895B-BCEC-447A17F2CDDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2CF26D-553E-895B-BCEC-447A17F2CDDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2CF26D-553E-895B-BCEC-447A17F2CDDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2CF26D-553E-895B-BCEC-447A17F2CDDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A90A8E8-F6F1-48D9-AAC6-05E74F67643B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A90A8E8-F6F1-48D9-AAC6-05E74F67643B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A90A8E8-F6F1-48D9-AAC6-05E74F67643B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A90A8E8-F6F1-48D9-AAC6-05E74F67643B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{DE75F157-A295-4246-AB1A-A46F3638E6BA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{C5E750ED-7E00-41E1-8307-C0E05EF9D58B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{8692C5B9-AE78-4F9F-898D-0E6C695A8E2E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{44B772AF-D6F4-4B60-B8C9-06EAC68D4E1D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{50F82C37-65E5-4F31-AFB4-F51139C80E6E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{43584468-0683-4925-AD56-6718D1275121} = {50F82C37-65E5-4F31-AFB4-F51139C80E6E}
+		{3311A19D-178E-4682-8301-FE53834F92D1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2FC6F416-4983-04A1-0337-203855C83542} = {3311A19D-178E-4682-8301-FE53834F92D1}
+		{A56D08B8-9E64-47FA-2FB6-E95069827A8C} = {3311A19D-178E-4682-8301-FE53834F92D1}
+		{5B5D07FF-1904-116C-22F9-563808510CEE} = {3311A19D-178E-4682-8301-FE53834F92D1}
+		{FB2CF26D-553E-895B-BCEC-447A17F2CDDB} = {3311A19D-178E-4682-8301-FE53834F92D1}
+		{9A90A8E8-F6F1-48D9-AAC6-05E74F67643B} = {50F82C37-65E5-4F31-AFB4-F51139C80E6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99C84D0C-1B0F-41A9-818B-98F6F111B25B}
