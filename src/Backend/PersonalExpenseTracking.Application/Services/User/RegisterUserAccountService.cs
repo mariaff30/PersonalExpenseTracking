@@ -8,10 +8,10 @@ using PersonalExpenseTracking.Domain.Repositories.User;
 using PersonalExpenseTracking.Domain.Security.PasswordHashing;
 using PersonalExpenseTracking.Domain.Security.Tokens;
 using Mapster;
-using PersonalExpenseTracking.Application.Services.Exceptions;
 using FluentValidation.Results;
 using PersonalExpenseTracking.Domain.Enums;
 using PersonalExpenseTracking.Application.Services.User;
+using PersonalExpenseTracking.Exception.ExceptionsBase;
 
 namespace PersonalExpenseTracking.Application.Services
 {

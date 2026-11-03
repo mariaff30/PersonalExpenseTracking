@@ -1,8 +1,4 @@
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using PersonalExpenseTracking.Api.Configuration;
 using PersonalExpenseTracking.Application.DTOs.Request;
 using PersonalExpenseTracking.Application.DTOs.Response;
 using PersonalExpenseTracking.Application.Interfaces;

@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using PersonalExpenseTracking.Application.DTOs.Request;
-using PersonalExpenseTracking.Domain.Enums;
+using PersonalExpenseTracking.Exception.ExceptionsBase;
 
 namespace PersonalExpenseTracking.Application.Services.Update
 {

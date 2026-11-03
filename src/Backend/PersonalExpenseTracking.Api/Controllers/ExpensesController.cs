@@ -11,10 +11,10 @@ namespace dotnet_order_management_api.Api.Controllers
     {
         [HttpGet]
         [Authorize]
-        [ProducesResponseType(typeof(ResponseExensesUser), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseExpenseUser), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetExpensesUser([FromServices] IGetExpensesUser useCase, [FromBody] Guid idUser)
         {
-            var result = await useCase.Execute();
+            var result = await useCase.GetExpenseUser();
 
             return Ok(result);
         }

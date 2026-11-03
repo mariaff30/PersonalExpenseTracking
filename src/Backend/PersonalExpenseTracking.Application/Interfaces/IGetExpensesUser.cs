@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PersonalExpenseTracking.Application.DTOs.Response;
 
 namespace PersonalExpenseTracking.Application.Interfaces
 {
     public interface IGetExpensesUser
     {
+        Task<ResponseExpenseUser> GetExpenseUser();
     }
 }
